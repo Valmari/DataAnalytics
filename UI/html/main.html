@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg bg-secondary p-2 bg-opacity-25">
         <div class="container-fluid">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="main.html">
                     <img src="/UI/picture/logo/navbar-logo.jpg" alt="logo" width="30" height="24">
                 </a>
             </div>
@@ -70,12 +70,12 @@
 
             <div class="container-sm m-lg-5">
                 <h5 class="d-flex">Регион</h5>
-                <a href="main-regionSelection.html" class="btn btn-outline-warning" type="button">Выбрать регион</a>
+                <a href="main-regionSelection.html" class="btn btn-warning" type="button">Выбрать регион</a>
             </div>
 
             <div class="container-sm m-lg-5">
                 <h5 class="d-flex">Отрасль</h5>
-                <a href="main-industryСhoice.html" class="btn btn-outline-warning" type="button">Выбрать отрасль</a>
+                <a href="main-industryСhoice.html" class="btn btn-warning" type="button">Выбрать отрасль</a>
             </div>
 
             <div class="container-sm m-lg-5">
@@ -86,13 +86,13 @@
                             <div class="filters-price__slider" id="range-slider"></div>
                             <div class="filters-price__inputs d-flex">
                                 <label class="filters-price__label d-flex align-items-center ps-1 me-3 border border-secondary border-opacity-50" style="width:120px;">
-                            <span class="filters-price__text ">от</span>
-                            <input type="number" min="500" max="999999" placeholder="500" class="filters-price__inputs border-0 p-2 w-50" id="input-1">
+                            <span class="filters-price__text pe-1">от</span>
+                            <input type="number" min="500" max="999999" placeholder="500" class="filters-price__inputs border-0 p-2 me-1" id="input-1" style="width: 70px;">
                             <span class="filters-price__text fs-5">₽</span>
                         </label>
                                 <label class="filters-price__label d-flex align-items-center ps-1 border border-secondary border-opacity-50 col-auto" style="width:120px;">
                             <span class="filters-price__text  pe-1 ">до</span>
-                            <input type="number " min="500 " max="999999 " placeholder="999999 " class="filters-price__inputs border-0 me-1 w-50 " id="input-2 ">
+                            <input type="number " min="500 " max="999999 " placeholder="999999 " class="filters-price__inputs border-0 p-2 me-1" id="input-2" style="width: 70px;" >
                             <span class="filters-price__text fs-5">₽</span>
                         </label>
                             </div>
@@ -103,11 +103,11 @@
 
             <div class="container-sm m-lg-5 ">
                 <div class="dropdown">
-                    <button class="btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-warning dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Тип заявок
                     </button>
-                    <ul class="dropdown-menu ">
-                        <li><a class="dropdown-item" href="# ">Все</a></li>
+                    <ul class="dropdown-menu border border-warning border-opacity-50">
+                        <li><a class="dropdown-item " href="# ">Все</a></li>
                         <li><a class="dropdown-item" href="# ">Открытые</a></li>
                         <li><a class="dropdown-item" href="# ">Закрытые</a></li>
                     </ul>
@@ -124,11 +124,68 @@
 
         <div class="col-4 ">
             <div class="container pt-5 mt-5 ">
-                <h3 class="d-flex ">Открытые заявки</h3>
+                <h3 class="d-flex ">Выберите запрос</h3>
             </div>
 
-            <div class="ps-3 pt-5 mt-5 justify-content-center ">
-                <ul class="list-group py-3 ">
+            <div class="container pt-5 border-bottom border-warning ">
+                <h5 class="d-flex ">Благоустройство территории</h5>
+            </div>
+
+            <div class="justify-content-between">
+
+
+
+                <div class="d-flex justify-content-between pt-4">
+                    <!-- <a href="#" style="text-decoration: none; text-decoration: black;">Укладка плитки</a>
+                    <a href="#" style="text-decoration: none; text-decoration: black;">Оформление клумб</a>
+                    <a href="#" style="text-decoration: none; text-decoration: black;">Вырубка кустарника</a> -->
+
+                    <a href="select-1.html" type="button" class="btn btn-outline-dark border-0">Укладка плитки</a>
+                    <a href="%" type="button" class="btn btn-outline-dark border-0">Оформление клумб</a>
+                    <a href="%" type="button" class="btn btn-outline-dark border-0">Вырубка кустарника</a>
+
+                </div>
+
+                <div class="d-flex justify-content-between pt-5">
+                    <a href="%" type="button" class="btn btn-outline-dark border-0">Посадка деревьев</a>
+                    <a href="%" type="button" class="btn btn-outline-dark border-0">Обрезка деревьев</a>
+                    <a href="%" type="button" class="btn btn-outline-dark border-0">Ремонт тротуара</a>
+                </div>
+
+
+
+                <div class="container pt-5 border-bottom border-warning ">
+                    <h5 class="d-flex ">Для офисов и магазинов</h5>
+                </div>
+                <div class="d-flex justify-content-between pt-4">
+                    <a href="%" type="button" class="btn btn-outline-dark border-0">3D принтеры</a>
+                    <a href="%" type="button" class="btn btn-outline-dark border-0">Бумага А4</a>
+                    <a href="%" type="button" class="btn btn-outline-dark border-0">Диван</a>
+                </div>
+                <div class="d-flex justify-content-between pt-5">
+                    <a href="%" type="button" class="btn btn-outline-dark border-0">Кассовая техника</a>
+                    <a href="%" type="button" class="btn btn-outline-dark border-0">Ноутбук</a>
+                    <a href="%" type="button" class="btn btn-outline-dark border-0">Принтеры</a>
+                </div>
+                <div class="d-flex justify-content-between pt-5">
+                    <a href="%" type="button" class="btn btn-outline-dark border-0">Персональный компьютер</a>
+                    <a href="%" type="button" class="btn btn-outline-dark border-0">Стеллажи</a>
+                    <a href="%" type="button" class="btn btn-outline-dark border-0">Электронные часы</a>
+                </div>
+                <div class="d-flex justify-content-between pt-5">
+                    <a href="%" type="button" class="btn btn-outline-dark border-0 pe-5">Проекторы</a>
+                    <a href="%" type="button" class="btn btn-outline-dark border-0 ps-5">Стулья</a>
+                    <a href="%" type="button" class="btn btn-outline-dark border-0">Дизайн интерьера</a>
+                </div>
+
+
+
+
+
+
+
+
+                <!-- <ul class="list-group py-3 ">
                     <li class="list-group-item ">
                         <img src="/UI/picture/example.png " class="rounded-1 " alt="exam "> An item
                         <div class="col-4 ">One of two columns</div>
@@ -169,7 +226,7 @@
                         <img src="/UI/picture/example.png " class="rounded-1 " alt="exam "> An item
                         <div class="col-4 ">One of two columns</div>
                     </li>
-                </ul>
+                </ul> -->
 
             </div>
         </div>
