@@ -1,18 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './Header';
-import Admin from './Admin';
+import HomePage from "pages/HomePage";
+import LoginPage from "pages/LoginPage";
+import RegisterPage from "pages/RegisterPage";
+import { Routes, Route } from "react-router-dom"
 
 
-
-export default function App() {
+function App() {
   return (
-    <BrowserRouter>
-    <Header />
-    </BrowserRouter>
+    <Routes>
+      <Route exact path="/" element={<HomePage />} />
+      <Route exact path="/login" element={<LoginPage />} />
+      <Route exact path="/register" element={<RegisterPage />} />
+    </Routes>
   );
 }
 
-
+export default App;
