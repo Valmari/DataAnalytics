@@ -20,7 +20,7 @@ const HomePage = () => {
                Log out from {email}
             </button>
 
-           
+            <Link to="/application">app</Link>
         </div> 
     ) : (
         
