@@ -1,11 +1,14 @@
 import { Navigate } from "react-router-dom";
 import { useAuth } from 'hooks/use-auth';
 import {useDispatch} from 'react-redux';
-import {removeUser} from 'store/slices/userSlice'
+import {removeUser} from 'store/slices/userSlice';
+import { Link } from "react-router-dom";
+import ApplicForm from "./ApplicForm";
+import { Container } from "@mui/system";
+
 
 const HomePage = () => {
-const dispatch = useDispatch();
-
+    const dispatch = useDispatch();
     const {isAuth, email} = useAuth();
 
     return isAuth ? ( 
@@ -16,10 +19,29 @@ const dispatch = useDispatch();
                   onClick={()=> dispatch(removeUser())}>
                Log out from {email}
             </button>
-        </div>
-    ) : (
-        <Navigate to="/login" />
-    );
-}
 
+           
+        </div> 
+    ) : (
+        
+        <Navigate to="/login" />
+
+        
+        
+        );
+
+
+
+    }
+
+    
 export default HomePage;
+
+
+  
+
+
+
+
+
+
