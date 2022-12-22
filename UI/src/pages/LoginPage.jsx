@@ -11,7 +11,7 @@ const LoginPage = () => {
                 
             </p>
 
-            <p><Link to="/application">app</Link></p>
+            {/* <p><Link to="/application">app</Link></p> */}
         </div>
     );
 }
