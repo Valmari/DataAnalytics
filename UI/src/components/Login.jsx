@@ -20,7 +20,7 @@ const Login = () => {
                 }));
                 navigate('/');
             })
-            .catch(() => alert('Invalid user!'))
+            .catch(() => alert('Non-existent email or password!'))
     }
 
     return (

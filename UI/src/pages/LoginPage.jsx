@@ -8,7 +8,10 @@ const LoginPage = () => {
                <Login />
             <p>
                 Or <Link to="/register">register</Link>
+                
             </p>
+
+            {/* <p><Link to="/application">app</Link></p> */}
         </div>
     );
 }
